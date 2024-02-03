@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSQLApp", "PostgreSQLApp\PostgreSQLApp.csproj", "{CD7A81B5-BC5E-42AC-8440-1DD87382FEBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSQLApp", "PostgreSQLApp\PostgreSQLApp.csproj", "{CD7A81B5-BC5E-42AC-8440-1DD87382FEBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerApp", "SQLServerApp\SQLServerApp.csproj", "{7C9B6A9D-F22E-4C47-9394-838E4492FA27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLServerApp", "SQLServerApp\SQLServerApp.csproj", "{7C9B6A9D-F22E-4C47-9394-838E4492FA27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLApp", "MySQLApp\MySQLApp.csproj", "{46BDCDB2-FC64-43CD-AAA8-1A248370AE17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7C9B6A9D-F22E-4C47-9394-838E4492FA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C9B6A9D-F22E-4C47-9394-838E4492FA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C9B6A9D-F22E-4C47-9394-838E4492FA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BDCDB2-FC64-43CD-AAA8-1A248370AE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BDCDB2-FC64-43CD-AAA8-1A248370AE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BDCDB2-FC64-43CD-AAA8-1A248370AE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BDCDB2-FC64-43CD-AAA8-1A248370AE17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
