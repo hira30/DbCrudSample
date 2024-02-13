@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using SQLServerApp;
 
 // 先ほどコピーした接続文字列を貼り付ける
 var connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=testdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
@@ -26,3 +27,22 @@ using (var connection = new SqlConnection(connectionString))
         }
     }
 }
+
+// 同期処理
+//var sync = new CrudSync(connectionString);
+
+//sync.Update();
+//sync.Insert();
+//sync.Delete();
+
+//Console.WriteLine("処理が完了しました！");
+
+
+// 非同期処理
+var async = new CrudAsync(connectionString);
+
+await async.UpdateAsync();
+await async.InsertAsync();
+await async.DeleteAsync();
+
+Console.WriteLine("処理が完了しました！");
