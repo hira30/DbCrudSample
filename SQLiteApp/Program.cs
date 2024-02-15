@@ -10,8 +10,12 @@ using (var command = connection.CreateCommand())
     // 接続開始
     connection.Open();
 
+    // usersテーブルが存在する場合は削除
+    command.CommandText = "DROP TABLE IF EXISTS users;";
+    command.ExecuteNonQuery();
+
     // usersテーブルの作成
-    command.CommandText = @"CREATE TABLE users(id int, name varchar(10), age int)";
+    command.CommandText = "CREATE TABLE users(id int, name varchar(10), age int)";
     command.ExecuteNonQuery();
 
     // データの挿入
@@ -22,7 +26,7 @@ using (var command = connection.CreateCommand())
     command.ExecuteNonQuery();
 
     // SELECT文の実行
-    command.CommandText = "SELECT * FROM users";
+    command.CommandText = "SELECT * FROM users;";
     using var reader = command.ExecuteReader();
 
     // 1行ずつデータを取得
